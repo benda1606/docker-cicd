@@ -1,6 +1,6 @@
 job('NodeJS  benda example') {
     scm {
-        git('git://github.com/wardviaene/docker-demo.git') {  node -> // is hudson.plugins.git.GitSCM
+        git('https://github.com/benda1606/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL yaniv')
             node / gitConfigEmail('jenkins-dsl@newtech.academy')
         }
