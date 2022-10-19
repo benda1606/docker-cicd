@@ -18,7 +18,7 @@ job('NodeJS  benda example') {
 }
 job('NodeJS  benda 2 example') {
     scm {
-        git('git://https://github.com/benda1606/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
+        git('https://github.com/benda1606/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL yaniv')
             node / gitConfigEmail('jenkins-dsl@newtech.academy')
         }
